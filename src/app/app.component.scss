@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+}
+
+app-footer {
+    flex-shrink: 0;
+    height: 40px;
+    z-index: 1000;
+}
+
+.content-container {
+    flex-grow: 1;
+}
