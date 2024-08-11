@@ -8,64 +8,276 @@
             <fa-icon class="freccia-basso-2" [icon]="frecciaDown" animation="beat-fade" size="2xl"></fa-icon>
         </div>
     </div>
-    <div style="background-color: black; margin-top: 5%;" class="d-flex justify-content-between flex-row">
-        <app-left style="width: 20%;"></app-left>
-        <div class="main-text-style" style="width: 70%;" id="main-section">
-            <span class="d-flex justify-content-between flex-row">
-                "Fermati, viandante. Il destino non risparmia i buoni."
-                Questa era una delle frasi preferite del mio caro collega e
-                mentore, Mario Mariano. È stato lui a spingermi a scrivere e
-                a proseguire il lavoro su un caso che ci ha assorbito per anni.
-                Dopo la sua morte, riprendere in mano questo articolo è stato uno dei
-                compiti più difficili della mia vita. Ma, spronato dalla sua famiglia,
-                ho deciso che non completare ciò che avevamo iniziato sarebbe stato un
-                insulto al duro lavoro di entrambi.
-                <div class="col-md-4 col-12">
-                    <img class="img-fluid" style="width: 96%;" src="assets/img/Mario_mariano.jpg" alt="MarioMariano">
-                </div>
-            </span>
-            <p>
-                Oggi, con estrema cautela, vi racconto del caso del "Mostro di Polverina". 
-                Una vicenda che ha richiesto anni di analisi e ricerche meticolose, 
-                prima condotte insieme a Mario e poi, dolorosamente, da solo.
-            </p>
-            <hr style="height: 2px; background-color: red; border: none;">
-            <span class="d-flex justify-content-between flex-row">
-                <img style="width: 17%; height: 60%; object-fit: cover; margin-right: 8px;"src="assets/img/Vera_Marro.jpg" alt="VerraMarrp">
-                Tutto iniziò con la scomparsa di Vera Marro, 
-                una giovane donna sparita il 9 agosto 2003 nei pressi del fiume Nera. 
-                Viaggiava a bordo del suo Piaggio Free quando di lei si persero le tracce. 
-                Il fratellastro di Vera, Emanuele Ravera, residente a Spoleto, 
-                ci scrisse una lettera disperata, chiedendo giustizia. 
-                Le forze dell'ordine locali avevano archiviato il caso come un semplice suicidio, 
-                basandosi su indagini frettolose e superficiali. Ma Emanuele era convinto del contrario, 
-                e noi fummo attratti dal suo grido d'aiuto.
-            </span>
-            <span>
-                Nei giorni successivi alla segnalazione, 
-                la polizia rintracciò il motorino di Vera. 
-                Alla guida c'era un giovane immigrato che disse di averlo acquistato
-                da un uomo con una borsetta, rinvenuta poco prima davanti alla questura. 
-                Le telecamere di sorveglianza mostrarono un individuo con un'andatura zoppicante, 
-                ma il suo volto rimase irriconoscibile. Il caso subì una svolta tragica con il
-                ritrovamento del corpo di Vera nel lago di Piediluco, ormai ridotto a ossa e pelle in avanzato 
-                stato di decomposizione.
-            </span>
-            <hr style="height: 2px; background-color: red; border: none;">
-            <span>
-                Sia io che il mio collega, non eravamo nuovi a questo genere di storie, 
-                alcuni giornalisti di vecchio stampo non erano estranei a queste dinamiche, 
-                è ormai famoso il caso dell' ”esercito dei scomparsi” in Umbria, a partire dai 
-                più famosi come Ivan Ciavarro o Sonia Marra, e molti corpi senza nome mai 
-                reclamati in tutta la regione, le zone dove avvengono più frequentemente questi 
-                casi viene definito tra noi giornalisti come “il triangolo dei tre laghi” che coinvolge 
-                il lago di Polverina, il lago di Trasimeno e il lago di Piediluco, quindi sia io che il 
-                mio collega sapevamo che se volevamo fare luce su questa vicenda, probabilmente come molti 
-                altri giornalisti e investigatori prima di noi, avremmo potuto brancolare nel buio senza 
-                mai venirne a capo.
-            </span>
+    <div style="background-color: black; position: relative" class="d-flex justify-content-between flex-row">
+        <div class="left-side">
+            <div class="repeated-image-container-left"></div>
         </div>
-        <app-right style="width: 20%;"></app-right>
+        <div class="main-text-style" style="width: 70%; margin-top: 5%;" id="main-section">
+            <div id="giornalista">
+                <span class="d-flex justify-content-between flex-row">
+                    "Fermati, viandante. Il destino non risparmia i buoni."
+                    Questa era una delle frasi preferite del mio caro collega e
+                    mentore, Mario Mariano. È stato lui a spingermi a scrivere e
+                    a proseguire il lavoro su un caso che ci ha assorbito per anni.
+                    Dopo la sua morte, riprendere in mano questo articolo è stato uno dei
+                    compiti più difficili della mia vita. Ma, spronato dalla sua famiglia,
+                    ho deciso che non completare ciò che avevamo iniziato sarebbe stato un
+                    insulto al duro lavoro di entrambi.
+                    <div class="col-md-4 col-12">
+                        <img class="img-fluid" style="width: 96%;" src="assets/img/Mario_mariano.jpg" alt="MarioMariano">
+                    </div>
+                </span>
+                <span>
+                    Oggi, con estrema cautela, vi racconto del caso del "Mostro di Polverina". 
+                    Una vicenda che ha richiesto anni di analisi e ricerche meticolose, 
+                    prima condotte insieme a Mario e poi, dolorosamente, da solo.
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="donnaScomparsa">
+                <span class="d-flex justify-content-between flex-row">
+                    <img style="width: 17%; height: 60%; object-fit: cover; margin-right: 8px;"src="assets/img/Vera_Marro.jpg" alt="VerraMarro">
+                    Tutto iniziò con la scomparsa di Vera Marro, 
+                    una giovane donna sparita il 9 agosto 2003 nei pressi del fiume Nera. 
+                    Viaggiava a bordo del suo Piaggio Free quando di lei si persero le tracce. 
+                    Il fratellastro di Vera, Emanuele Ravera, residente a Spoleto, 
+                    ci scrisse una lettera disperata, chiedendo giustizia. 
+                    Le forze dell'ordine locali avevano archiviato il caso come un semplice suicidio, 
+                    basandosi su indagini frettolose e superficiali. Ma Emanuele era convinto del contrario, 
+                    e noi fummo attratti dal suo grido d'aiuto.
+                </span>
+                <span>
+                    Nei giorni successivi alla segnalazione, 
+                    la polizia rintracciò il motorino di Vera. 
+                    Alla guida c'era un giovane immigrato che disse di averlo acquistato
+                    da un uomo con una borsetta, rinvenuta poco prima davanti alla questura. 
+                    Le telecamere di sorveglianza mostrarono un individuo con un'andatura zoppicante, 
+                    ma il suo volto rimase irriconoscibile. Il caso subì una svolta tragica con il
+                    ritrovamento del corpo di Vera nel lago di Piediluco, ormai ridotto a ossa e pelle in avanzato 
+                    stato di decomposizione.
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="psicopatico">
+                <span class="d-flex justify-content-between flex-row">
+                    Sia io che il mio collega, non eravamo nuovi a questo genere di storie, 
+                    alcuni giornalisti di vecchio stampo non erano estranei a queste dinamiche, 
+                    è ormai famoso il caso dell' ”esercito dei scomparsi” in Umbria, a partire dai 
+                    più famosi come Ivan Ciavarro o Sonia Marra, e molti corpi senza nome mai 
+                    reclamati in tutta la regione, le zone dove avvengono più frequentemente questi 
+                    casi viene definito tra noi giornalisti come “il triangolo dei tre laghi” che coinvolge 
+                    il lago di Polverina, il lago di Trasimeno e il lago di Piediluco, quindi sia io che il 
+                    mio collega sapevamo che se volevamo fare luce su questa vicenda, probabilmente come molti 
+                    altri giornalisti e investigatori prima di noi, avremmo potuto brancolare nel buio senza 
+                    mai venirne a capo.
+                    <img style="width: 17%; height: 50%; object-fit: cover; margin-right: 8px;"
+                        src="assets/img/Angelo_Izzo.jpg" alt="AngeloIzzo">
+                </span>
+                <span>
+                    Decidemmo di iniziare da un caso molto simile a quello di Vera Marro per capire se 
+                    potevamo trovare indizi che potevano aiutare Emanuele Ravera a fare giustizia per lui 
+                    e la sua famiglia, e ci venne in mente il caso di Rossella Corazzin, la cosa inquietante 
+                    che li accomuna è la presenza di un uomo zoppicante, e che l'efferato crimine fu 
+                    commesso da Angelo Izzo conosciuto nella storia come il “Mostro del Circeo”, 
+                    nel 1975 lui e una banda di amici altolocati commisero una serie di atti orribili, 
+                    tra stupri effettuati con cadenza regolare, quasi ogni settimana, fino 
+                    ad arrivare a smembrare o a nascondere il copro delle vittime, come nel caso della 
+                    povera Rossella Corazzin.
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="rosaRossa">
+                <div class="d-flex flex-column">
+                    <span class="d-flex justify-content-between flex-row">
+                        <img style="width: 20%; height: 50%; object-fit: cover; margin-right: 8px;"
+                        src="assets/img/Rosa_Rossa.jpg" alt="RosaRossa">
+                        L'ultima persona che vide la 17enne viva, fu un commerciante, che riferì 
+                        di averla vista in un'auto rossa sul sedile posteriore, mentre dormiva in 
+                        pieno giorno, era stata drogata?
+                        A quel punto Angelo Izzo e un giovane ragazzo zoppicante si rivolsero al commerciante per 
+                        alcuni viveri, per poi andarsene immediatamente dopo, solo molti anni dopo Angelo Izzo 
+                        confesso come e dove rapì la vittima e successivamente spiego che si liberò del 
+                        corpo ma non prima di avergli fatto lo scalpo, Angelo Izzo non confesso mai dove 
+                        nascose i capelli della vittima.
+                    </span>
+                    <span>
+                        Successivamente si venne a scoprire che Angelo 
+                        Izzo faceva parte di una setta chiamata “Rosa Rossa”, i 
+                        quali partecipanti erano proprio i ragazzi adolescenti, 
+                        della buona borghesia di piazza Euclide, a Roma, che prova 
+                        l'ebbrezza del potere, del dominio, del sopruso sopra una donna, 
+                        quelli che a Angelo Izzo piaceva chiamare “i suoi brughi” un chiaro
+                         rifermento al film arancia meccanica. 
+                    </span>
+                </div>
+                <span>
+                    Ma la cosa che rimase sempre in poca considerazione fu la menzione 
+                    del giovane ragazzo zoppicante, che fu notato e 
+                    nominato solo dal commerciante dell'omicidio di Rossella Corazzin, 
+                    e su qualche verbale, ma non fu mai identificato. 
+                    Angelo Izzo non menziono mai la presenza di questo ragazzo e anche ai giorni nostri 
+                    si può dire che alcuni membri della rosa rossa non furono mai identificati, ma 
+                    purtroppo fu a questo punto dell'indagine che il mio collega Mario Mariano venne a 
+                    mancare, questo mi spinse ad allontanarmi dal caso Vera Marro e a non continuare 
+                    ulteriormente le indagini per un paio di anni.
+                    Ma quando ripresi a scrivere questo articolo e ricominciai a recuperare 
+                    informazioni che potessero aiutare a trovare una pista, trovai una notizia di un 
+                    omicidio che ha seguito il modus operandi di molti degli omicidi effettuati da
+                    Angelo Izzo nel '75, ma con qualche differenza.
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="omicidioPolverina">
+                <span class="d-flex justify-content-between flex-row">
+                    Un dramma avvenuto al lago di Polverina nel 2022, Un anziano di 81 anni di 
+                    Muccia era uscito di casa presto secondo le testimonianze di alcuni residenti dell'area, 
+                    poi un familiare passando ha riconosciuto la sua auto nei pressi del lago e 
+                    insospettito si è avvicinato, e fu così che venne trovato morto riverso nel lago di 
+                    polverina con un brutto taglio vicino lo scalpo e con i vestiti poco lontano dalla costa. 
+                    A nulla sono valsi i tentativi di salvarlo, sono intervenuti gli operatori sanitari 
+                    dell'emergenza 118, che tuttavia non hanno potuto far altro che constatare il decesso dell'uomo. 
+                    Sul posto anche i vigili del fuoco e i carabinieri della compagnia di Camerino che hanno avviato 
+                    gli accertamenti per chiarire l'accaduto.
+                    <img style="width: 36%; height: 100%; object-fit: cover; margin-left: 8px;"
+                    src="assets/img/Polverina_Morto.jpg" alt="PolverinaMorto">
+                </span>
+                <span>
+                    Una volta sentita questa notizia mi diressi subito nei pressi del lago di polverina per 
+                    trovare più informazioni, una vittima con una ferita del genere proprio in uno dei tre laghi 
+                    considerati teatro di molte scomparse era una scena fin troppo familiare, la prima cosa che 
+                    feci fu quella di chiedere ai residenti, la cosa più peculiare e strana fu quella che nella 
+                    notizia riportata sui giornali non era presente una parte fondamentale di una testimone che 
+                    affermava di aver visto di sfuggita un “uomo alto con un cappello bianco e una gamba storta parlare
+                    con la vittima nei pressi di un parcheggio vicino al lago di polverina” affermava anche di aver 
+                    visto più volte quell'uomo che parlava con la vittima uscire e rientrare presso una casa abbandonata 
+                    vicino il lago di polverina, ma questa testimonianza fu immediatamente scartata dalla procura di Camerino, 
+                    data la poca credibilità del testimone. 
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="casaAbbandonata">
+                <span class="d-flex justify-content-between flex-row">
+                    <img style="width: 50%; height: 100%; object-fit: cover; margin-right: 8px;"
+                    src="assets/img/Casa_Polverina.png" alt="CasaPolverina">
+                    Era una conosciuta tossico dipendente senza tetto locale che frequentava 
+                    spesso la zona del lago e il comune di Matelica, che al momento delle 
+                    indagini quando gli venne chiesto di testimoniare fu trovata sotto effetto di stupefacenti.
+                    La mia prima intenzione fu quella di andare a 
+                </span>
+                <span>
+                    cercare la donna che testimonio l'accaduto che 
+                    lei stessa riportò, ma venni a scoprire la tragica notizia da uno dei residenti vicino al lago, 
+                    che pochi giorni dopo la testimonianza la senza tetto fu trovata morta in stato di overdose 
+                    vicino una casa abbandonata nei pressi del lago di polverina.
+                </span>
+                <span>
+                    A quel punto il primo sospetto che mi venne in mente fu quello di andare a 
+                    visitare questa casa abbandonata, il luogo sembrava piuttosto pacifico e tranquillo, 
+                    vicino una autostrada, poco prima della casa abbandonata ho trovato un piccolo spiazzo verde 
+                    con una panchina all'ombra degl'alberi e alcuni cartelli che spiegavano le origini e la fauna del 
+                    lago di polverina, quando arrivai alla casa abbandonata seguendo le indicazioni che mi avevano 
+                    indicato i locali mi ritrovai davanti due ruderi, uno dei due edifici era crollato, purtroppo 
+                    l'edificio ancora in piedi era inagibile ed entrare in esso era troppo pericoloso, ma sporgendomi 
+                    ed osservando gli interni non notai nulla di insolito, sembrava veramente una casa 
+                    abbandonata da parecchio tempo.
+                    Poco dopo aver finito di ispezionare i dintorni mi convinsi che probabilmente non avrei 
+                    trovato niente che non avrebbero già trovato le forze dell'ordine, ma ci fu un evento che mi 
+                    fece accapponare la pelle appena mi allontanai dalla casa. 
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="incontroAssassino">
+                <span class="d-flex justify-content-between flex-row">
+                    <img style="width: 30%; height: 100%; object-fit: cover; margin-right: 8px;"
+                    src="assets/img/Assassino.jpeg" alt="Assassino">
+                    Mentre mi allontanavo dal rudere il mio sguardo si poso 
+                    sull'autostrada vicino alla casa abbandonata, e li notai una macchina rossa 
+                    parecchio vecchia, ferma ai bordi della strada, con il motore ancora accesso e le 
+                    quattro frecce, pensai immediatamente che era solo qualcuno che aveva deciso di fare 
+                    una sosta li, ma poi i miei occhi si posarono sull'uomo al volante, anche se era lontano e 
+                    si poteva capire poco, potevo dire con certezza che quell'uomo stava guardando me, non si 
+                    muoveva e mi fissava intensamente, sembrava di osservare il vuoto per quanto immobile era, quasi 
+                    come se non al posto 
+                </span>
+                <span>
+                    di quell'uomo ci fosse un buco, e posso dire quasi con certezza che aveva un 
+                    cappello bianco in testa, rimase li a guardare nella mia direzione per più di qualche minuto, 
+                    potevo sentire il suo sguardo su di me, non so il perché ma in genere la mia natura da giornalista in 
+                    casi del genere mia avrebbe dovuto spingere ad andare vero quell'uomo, a interrogarlo anche solo per 
+                    curiosità, ma questa volta sentivo che cera qualcosa di terribile, mi si stava gelando il sangue, 
+                    sapevo che se mai avessi deciso di rimanere li qualche minuto i più probabilmente non avrei mai avuto 
+                    il coraggio di muovermi, trovai la forza di girarmi e con passo affrettato me ne andari da quel 
+                    posto e mi assicurai di prendere un'altra direzione rispetto alla macchina rossa parcheggiata nei 
+                    pressi della casa abbandonata.
+                </span>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <div id="conclusione">
+                <div class="d-flex flex-column">
+                    <span>
+                        Da quel giorno non mi levai la sensazione di essere osservato durante il periodo in cui 
+                        alloggiavo nei pressi del lago di polverina, fino a portarmi quasi all'esaurimento, capii 
+                        che se fossi rimasto ulteriormente li, probabilmente o sarei impazzito o qualcosa di terribile 
+                        mi sarebbe accaduto, me lo sentivo.
+                    </span>
+                    <span>
+                        Ed è qui che si interrompe l'indagine mia e del mio caro collega Mario Mariano, 
+                        malgrado il punto in cui siamo arrivati in queste vicende, sento che se avessi 
+                        scavato più affondo probabilmente non sarei tornato mai indietro, e non solo il
+                        pericolo mi avrebbe raggiunto, ma probabilmente avrebbe raggiunto anche le persone che 
+                        fanno parte della mia vita, quindi per evitare delle conseguenze ho deciso di pubblicare 
+                        questo articolo in forma del tutto anonima, spero che qualunque anima coraggiosa 
+                        abbastanza da scavare in questo profondo fosso possa trovare una risposta dove io ho 
+                        trovato solo un immenso abisso.
+                    </span>
+                    <span style="margin-top: 12px; text-align: center;">
+                        Con riverenza, il vostro dottore.
+                    </span>
+                </div>
+            </div>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <p style="margin-top: 7%;" class="altre-vittime">Altre vittime</p>
+            <div style="margin-top: 7%;" class="d-flex flex-column">
+                <div class="grid-container">
+                    <div class="d-flex flex-row m-2">
+                        <img style="width: 35%; height: 100%; object-fit: cover; margin-right: 8px;"
+                        src="assets/img/Rossella_Corazzin.jpg" alt="RossellaCorazzin">
+                        <span>
+                            <strong>ROSSELLA CORRAZZIN</strong>
+                            <p>
+                                La ragazza di San Vito al Tagliamento (Pordenone) 
+                                sparì da Tai di Cadore il 21 
+                                agosto 1975, aveva 17 anni
+                            </p>
+                        </span>
+                    </div>
+                    <div class="d-flex flex-row m-2">
+                        <img style="width: 25%; height: 100%; object-fit: cover; margin-right: 8px;"
+                        src="assets/img/Sonia_Marra.jpg" alt="SoniaMarra">
+                        <span>
+                            <strong>SONIA MARRA</strong>
+                            <p>
+                                all'epoca della sua scomparsa 25enne, che sparì da Perugia un 
+                                giorno di novembre 2006. Sonia era di Specchia, in provincia di Lecce, 
+                                ma viveva in Umbria per ragioni di studio.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="d-flex flex-row m-2">
+                        <img style="width: 35%; height: 100%; object-fit: cover; margin-right: 8px;"
+                        src="assets/img/Ivan_Ciavarro.jpg" alt="IvanCiavarro">
+                        <span>
+                            <strong>IVAN CIAVARRO</strong>
+                            <p>
+                                Ivan Ciavarro, scomparso dal 1997 mentre soggiornava nello studentato Onaosi di Perugia
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="repeated-image-container-right"></div>
+        </div>
     </div>
-    <app-footer></app-footer>
 </div>

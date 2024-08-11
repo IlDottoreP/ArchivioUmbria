@@ -1,0 +1,19 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+}
+
+.content-container {
+  width: 100%;
+  overflow-y: scroll;
+}/*# sourceMappingURL=app.component.css.map */
