@@ -1,11 +1,71 @@
-<div style="height: 100vh; padding: 4%; color: white;"  class="d-flex justify-content-between flex-row bg-dark">
-    <div>
-        left
+<div style="height: 100vh; color: white;" style="background-color: black;"  class="d-flex flex-column justify-content-center">
+    <div style="background-color: black;"  class="d-flex justify-content-center position-relative">
+        <img style="width: 100%;" src="assets/img/Assassino_Polverina.png" alt="bg_lagoPolverina" >
+        <h1 class="d3"> IL MOSTRO DI POLVERINA</h1>
+        <p class="center-text">Caso</p>
+        <div style="cursor: pointer;" (click)="TransactionDown($event)">
+            <fa-icon class="freccia-basso-1" [icon]="frecciaDown" animation="beat-fade" size="2xl"></fa-icon>
+            <fa-icon class="freccia-basso-2" [icon]="frecciaDown" animation="beat-fade" size="2xl"></fa-icon>
+        </div>
     </div>
-    <div>
-        main
+    <div style="background-color: black; margin-top: 5%;" class="d-flex justify-content-between flex-row">
+        <app-left style="width: 20%;"></app-left>
+        <div class="main-text-style" style="width: 70%;" id="main-section">
+            <span class="d-flex justify-content-between flex-row">
+                "Fermati, viandante. Il destino non risparmia i buoni."
+                Questa era una delle frasi preferite del mio caro collega e
+                mentore, Mario Mariano. È stato lui a spingermi a scrivere e
+                a proseguire il lavoro su un caso che ci ha assorbito per anni.
+                Dopo la sua morte, riprendere in mano questo articolo è stato uno dei
+                compiti più difficili della mia vita. Ma, spronato dalla sua famiglia,
+                ho deciso che non completare ciò che avevamo iniziato sarebbe stato un
+                insulto al duro lavoro di entrambi.
+                <div class="col-md-4 col-12">
+                    <img class="img-fluid" style="width: 96%;" src="assets/img/Mario_mariano.jpg" alt="MarioMariano">
+                </div>
+            </span>
+            <p>
+                Oggi, con estrema cautela, vi racconto del caso del "Mostro di Polverina". 
+                Una vicenda che ha richiesto anni di analisi e ricerche meticolose, 
+                prima condotte insieme a Mario e poi, dolorosamente, da solo.
+            </p>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <span class="d-flex justify-content-between flex-row">
+                <img style="width: 17%; height: 60%; object-fit: cover; margin-right: 8px;"src="assets/img/Vera_Marro.jpg" alt="VerraMarrp">
+                Tutto iniziò con la scomparsa di Vera Marro, 
+                una giovane donna sparita il 9 agosto 2003 nei pressi del fiume Nera. 
+                Viaggiava a bordo del suo Piaggio Free quando di lei si persero le tracce. 
+                Il fratellastro di Vera, Emanuele Ravera, residente a Spoleto, 
+                ci scrisse una lettera disperata, chiedendo giustizia. 
+                Le forze dell'ordine locali avevano archiviato il caso come un semplice suicidio, 
+                basandosi su indagini frettolose e superficiali. Ma Emanuele era convinto del contrario, 
+                e noi fummo attratti dal suo grido d'aiuto.
+            </span>
+            <span>
+                Nei giorni successivi alla segnalazione, 
+                la polizia rintracciò il motorino di Vera. 
+                Alla guida c'era un giovane immigrato che disse di averlo acquistato
+                da un uomo con una borsetta, rinvenuta poco prima davanti alla questura. 
+                Le telecamere di sorveglianza mostrarono un individuo con un'andatura zoppicante, 
+                ma il suo volto rimase irriconoscibile. Il caso subì una svolta tragica con il
+                ritrovamento del corpo di Vera nel lago di Piediluco, ormai ridotto a ossa e pelle in avanzato 
+                stato di decomposizione.
+            </span>
+            <hr style="height: 2px; background-color: red; border: none;">
+            <span>
+                Sia io che il mio collega, non eravamo nuovi a questo genere di storie, 
+                alcuni giornalisti di vecchio stampo non erano estranei a queste dinamiche, 
+                è ormai famoso il caso dell' ”esercito dei scomparsi” in Umbria, a partire dai 
+                più famosi come Ivan Ciavarro o Sonia Marra, e molti corpi senza nome mai 
+                reclamati in tutta la regione, le zone dove avvengono più frequentemente questi 
+                casi viene definito tra noi giornalisti come “il triangolo dei tre laghi” che coinvolge 
+                il lago di Polverina, il lago di Trasimeno e il lago di Piediluco, quindi sia io che il 
+                mio collega sapevamo che se volevamo fare luce su questa vicenda, probabilmente come molti 
+                altri giornalisti e investigatori prima di noi, avremmo potuto brancolare nel buio senza 
+                mai venirne a capo.
+            </span>
+        </div>
+        <app-right style="width: 20%;"></app-right>
     </div>
-    <div>
-        right
-    </div>
+    <app-footer></app-footer>
 </div>
