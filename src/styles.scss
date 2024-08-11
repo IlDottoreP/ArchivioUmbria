@@ -1,7 +1,10 @@
 $primary: #900;
 $enable-shadows: true;
 $prefix: "mo-";
-
+@font-face {
+    font-family: 'Courier';
+    src: url('../src/assets/font/Courier-PS-Regular.ttf') format('truetype'); 
+}
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -14,7 +14,8 @@ import { LayoutModule } from './core/layout/layout.module';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    LayoutModule
+    LayoutModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
