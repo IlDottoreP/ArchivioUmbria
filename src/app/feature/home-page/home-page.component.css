@@ -15,7 +15,6 @@
   animation: flicker 2s infinite;
 }
 
-/* Animazione per creare un effetto sfarfallio */
 @keyframes flicker {
   0%, 100% {
     opacity: 1;
@@ -69,10 +68,6 @@
   letter-spacing: 0.03em;
 }
 
-span {
-  margin: 1px;
-}
-
 .altre-vittime {
   font-family: "Courier";
   font-size: 2em;
@@ -108,4 +103,13 @@ span {
   background-repeat: repeat-y;
   background-size: contain;
   background-position: center;
+}
+
+@media (max-width: 576px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
 }/*# sourceMappingURL=home-page.component.css.map */

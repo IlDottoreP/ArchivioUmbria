@@ -16,8 +16,6 @@
     animation: flicker 2s infinite; 
 }
 
-
-/* Animazione per creare un effetto sfarfallio */
 @keyframes flicker {
     0%, 100% {
         opacity: 1;
@@ -41,7 +39,6 @@
     color: #ff0000;
     text-align: center;
 }
-
 
 .freccia-basso-1 {
     position: absolute;
@@ -74,16 +71,13 @@
     letter-spacing: 0.03em;
 }
 
-span {
-    margin: 1px;
-}
-
 .altre-vittime {
     font-family: 'Courier';
     font-size: 2em;
     font-weight: bolder;
     color: #ff0000;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -93,7 +87,6 @@ span {
 .left-side, .right-side {
     width: 20%;
 }
-
 
 .repeated-image-container-left{
     width: 100%;
@@ -113,4 +106,14 @@ span {
     background-repeat: repeat-y;
     background-size: contain;
     background-position: center;
+}
+
+@media (max-width: 576px) {
+    .w-sm-25 {
+        width: 25% !important
+    }
+
+    .w-sm-50 {
+        width: 50% !important
+    }
 }
